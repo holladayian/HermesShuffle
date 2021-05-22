@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  background-color: #e4afff;
+  border-bottom: 2px solid #c86bfa;
+  font-family: 'Courier New', monospace;
+  font-size: xx-large;
+  color: #fbe300;
+  text-shadow: 2px 2px #c86bfa;
+  font-weight: bold;
+}
+
+.wing {
+  height: 80%;
+  margin: 2em;
+}
+
+.wingRight {
+  transform: scaleX(-1);
+}
