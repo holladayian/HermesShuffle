@@ -1,5 +1,6 @@
 .shuffler {
   margin-top: 3em;
+  height: 100%;
 }
 
 .s-button {
@@ -10,4 +11,12 @@
 
 img {
   height: 60px;
+}
+
+.shuffle-description, .card-list {
+  margin: 2em;
+}
+
+.card {
+  margin: .5em;
 }
