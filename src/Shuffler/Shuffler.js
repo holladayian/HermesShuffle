@@ -7,7 +7,7 @@ export class Shuffler extends Component {
   constructor() {
     super()
     this.state = {
-      cardList: ImageLoader,
+      cardList: ImageLoader.map((image, i) => {return {img: image, index: i}}),
       shuffleFunction: () => null,
       description: "",
       cardOrder: [],
@@ -25,7 +25,7 @@ export class Shuffler extends Component {
           <button className="wash s-button" onClick={() => this.shuffle(CardShuffler.wash(this.state.cardList))} data-testid="wash">Wash</button>
           <button className="overhand s-button" data-testid="overhand">Overhand</button>
           <button className="riffle s-button" data-testid="riffle">Riffle</button>
-          <button className="organize s-button" data-testid="organize">Organize</button>
+          <button className="organize s-button" data-testid="organize" onClick={() => this.shuffle(CardShuffler.organize(this.state.cardList))}>Organize</button>
         </div>
         {this.state.shuffleFunction() && 
           <>
@@ -36,7 +36,7 @@ export class Shuffler extends Component {
           </>
         }
         <div className="card-list" data-testid="card-list">
-          {this.state.cardList.map((card, i) => <img src={card} alt={card} className="card" key={i}/>)}
+          {this.state.cardList.map(card => <img src={card.img} alt={card.img} className="card" key={card.index}/>)}
         </div>
       </div>
     );
