@@ -1,0 +1,22 @@
+.shuffler {
+  margin-top: 3em;
+  height: 100%;
+}
+
+.s-button {
+  border: 1px solid #c86bfa;
+  background-color: white;
+  color: #c86bfa;
+}
+
+img {
+  height: 60px;
+}
+
+.shuffle-description, .card-list {
+  margin: 2em;
+}
+
+.card {
+  margin: .5em;
+}
