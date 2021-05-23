@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from './Header/Header.js';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 export class App extends Component {
@@ -12,20 +12,11 @@ export class App extends Component {
     return (
       <div className="App">
         <Header />
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Test
-          </a>
-        </header> */}
+        <Switch>
+          <Route exact path='/' render={() => <div>Home</div>}/>
+          <Route exact path='/shuffler' render={() => <div>Shuffler</div>}/>
+          <Route exact path='/about' render={() => <div>About</div>}/>
+        </Switch>
       </div>
     );
   }
