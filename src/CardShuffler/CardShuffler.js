@@ -11,5 +11,11 @@ export const CardShuffler = {
         deck[j] = temp;
       }
       return deck;
+  },
+
+  organize(deck) {
+    return deck.sort((a, b) => {
+      return a.index - b.index
+    })
   }
 }
