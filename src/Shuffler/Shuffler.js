@@ -15,23 +15,23 @@ export class Shuffler extends Component {
 
   render() {
     return (
-      <div className="shuffler">
-        <div className="button-section">
-          <button className="wash s-button">Wash</button>
-          <button className="overhand s-button">Overhand</button>
-          <button className="riffle s-button">Riffle</button>
-          <button className="organize s-button">Organize</button>
+      <div className="shuffler" data-testid="shuffler">
+        <div className="button-section" data-testid="button-section">
+          <button className="wash s-button" data-testid="wash">Wash</button>
+          <button className="overhand s-button" data-testid="overhand">Overhand</button>
+          <button className="riffle s-button" data-testid="riffle">Riffle</button>
+          <button className="organize s-button" data-testid="organize">Organize</button>
         </div>
         {this.state.shuffleFunction() && 
           <>
-            <div className="shuffle-description">
+            <div className="shuffle-description" data-testid="shuffle-description">
               {this.state.description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
             </div>
-            <button className="shuffle s-button">Shuffle</button>
+            <button className="shuffle s-button" data-testid="shuffle">Shuffle</button>
           </>
         }
-        <div className="card-list">
-          {this.state.cardList.map(card => <img src={card} alt={card} class="card"/>)}
+        <div className="card-list" data-testid="card-list">
+          {this.state.cardList.map((card, i) => <img src={card} alt={card} className="card" key={i}/>)}
         </div>
       </div>
     );
