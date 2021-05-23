@@ -5,21 +5,21 @@ import wing from '../assets/wing.png';
 
 export const Header = () => {
     return (
-      <section className="header">
-        <div className="header-top">
-          <img src={wing} alt="Wing" className="wing" />
+      <section className="header" data-testid="header">
+        <div className="header-top" data-testid="headerTop">
+          <img src={wing} alt="Wing" className="wing" data-testid="wingLeft"/>
           Hermes Shuffle
-          <img src={wing} alt="Wing" className="wing wingRight" />
+          <img src={wing} alt="Wing" className="wing wingRight" data-testid="wingRight"/>
         </div>
-        <div className="header-bottom">
+        <div className="header-bottom" data-testid="headerBottom">
           <Link to='/'>
-            <button className="home-button">Home</button>
+            <button className="home-button" data-testid="homeButton">Home</button>
           </Link>
           <Link to='/shuffler'>
-            <button className="shuffler-button">Shuffler</button>
+            <button className="shuffler-button" data-testid="shuffleButton">Shuffler</button>
           </Link>
           <Link to='/about'>
-            <button className="about-button">About</button>
+            <button className="about-button" data-testid="aboutButton">About</button>
           </Link>
         </div>
       </section>
