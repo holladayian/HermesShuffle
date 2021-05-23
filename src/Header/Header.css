@@ -1,4 +1,4 @@
-.header {
+.header-top {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,4 +20,18 @@
 
 .wingRight {
   transform: scaleX(-1);
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #c86bfa;
+}
+
+button {
+  color: #fbe300;
+  background: transparent;
+  border: none;
+  margin: .75em;
 }
