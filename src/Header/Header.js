@@ -18,9 +18,6 @@ export const Header = () => {
           <Link to='/shuffler'>
             <button className="shuffler-button" data-testid="shuffleButton">Shuffler</button>
           </Link>
-          <Link to='/about'>
-            <button className="about-button" data-testid="aboutButton">About</button>
-          </Link>
         </div>
       </section>
     );
