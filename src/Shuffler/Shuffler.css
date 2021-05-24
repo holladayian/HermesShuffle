@@ -20,3 +20,10 @@ img {
 .card {
   margin: .5em;
 }
+
+button {
+  background: transparent;
+  border: none;
+  margin: .75em;
+  cursor: pointer;
+}

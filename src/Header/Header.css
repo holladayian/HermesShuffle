@@ -29,10 +29,12 @@
   background-color: #c86bfa;
 }
 
-button {
+.header-button {
   color: #fbe300;
   background: transparent;
   border: none;
   margin: .75em;
   cursor: pointer;
+  font-weight: bold;
+  text-shadow: 2px 2px #ac5cd7;
 }
