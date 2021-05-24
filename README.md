@@ -15,6 +15,8 @@ To run tests, run `npm test`.
 
 ### Links
 
+[Deployed Site](https://hermesshuffle.vercel.app/)
+
 [Project Board](https://github.com/holladayian/HermesShuffle/projects/1)
 
 
