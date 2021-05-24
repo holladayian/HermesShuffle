@@ -12,13 +12,13 @@ export class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Switch>
-          <Route exact path='/' render={() => <Home />}/>
-          <Route exact path='/shuffler' render={() => <Shuffler />}/>
-        </Switch>
-      </div>
+        <div className="App" id="main">
+          <Header />
+          <Switch>
+            <Route exact path='/' render={() => <Home />}/>
+            <Route exact path='/shuffler' render={() => <Shuffler />}/>
+          </Switch>
+        </div>
     );
   }
 }
