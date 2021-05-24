@@ -10,7 +10,7 @@
 }
 
 img {
-  height: 60px;
+  height: 80px;
 }
 
 .shuffle-description, .card-list {
@@ -19,4 +19,11 @@ img {
 
 .card {
   margin: .5em;
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: .75em;
+  cursor: pointer;
 }

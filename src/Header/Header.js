@@ -13,13 +13,10 @@ export const Header = () => {
         </div>
         <div className="header-bottom" data-testid="headerBottom">
           <Link to='/'>
-            <button className="home-button" data-testid="homeButton">Home</button>
+            <button className="header-button" data-testid="homeButton">Home</button>
           </Link>
           <Link to='/shuffler'>
-            <button className="shuffler-button" data-testid="shuffleButton">Shuffler</button>
-          </Link>
-          <Link to='/about'>
-            <button className="about-button" data-testid="aboutButton">About</button>
+            <button className="header-button" data-testid="shuffleButton">Shuffler</button>
           </Link>
         </div>
       </section>
