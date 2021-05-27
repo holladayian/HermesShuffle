@@ -16,3 +16,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button:active {
+  transform: scale(.9)
+}
+
+button {
+  font-family: 'Courier New', monospace;
+}

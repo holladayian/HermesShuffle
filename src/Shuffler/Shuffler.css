@@ -7,6 +7,7 @@
   border: 1px solid #c86bfa;
   background-color: white;
   color: #c86bfa;
+  font-weight: bold;
 }
 
 img {
@@ -19,6 +20,8 @@ img {
 
 .card {
   margin: .5em;
+  box-shadow: 6px 3px rgba(154, 144, 7, 0.139);
+
 }
 
 button {

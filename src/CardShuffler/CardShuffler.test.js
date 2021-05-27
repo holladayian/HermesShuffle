@@ -11,9 +11,8 @@ describe("CardShuffler", () => {
   it('should shuffle the cards', () => {
     
     CardShuffler.wash(cardList);
-    console.log(cardList[0].img);
 
-    expect(cardList[0].img).not.toStrictEqual({"img": "AS.png", "index": 0});
+    expect(cardList).not.toStrictEqual(ImageLoader.map((image, i) => {return {img: image, index: i}}));
   })
 
   it('should reorganize the cards after they have been shuffled', () => {
@@ -21,6 +20,6 @@ describe("CardShuffler", () => {
     let shuffled = CardShuffler.wash(cardList);
     let organized = CardShuffler.organize(shuffled);
 
-    expect(organized[0]).toStrictEqual({"img": "AS.png", "index": 0});
+    expect(organized).toStrictEqual(ImageLoader.map((image, i) => {return {img: image, index: i}}));
   })
 })
