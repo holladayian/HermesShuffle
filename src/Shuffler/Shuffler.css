@@ -19,6 +19,8 @@ img {
 
 .card {
   margin: .5em;
+  box-shadow: 6px 3px rgba(154, 144, 7, 0.139);
+
 }
 
 button {
