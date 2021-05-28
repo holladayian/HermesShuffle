@@ -42,7 +42,7 @@ https://user-images.githubusercontent.com/62005294/119351603-e5e67c00-bc5d-11eb-
 I wrote this application in two days in order to send off as a technical challenge. Upon starting, I had the prompt, but I needed to create the idea... What's the Greek deity of gambling? \**googles** It's Hermes, and that's perfect, because now I can call this application the Hermes Shuffle, a play on the [Cupid Shuffle](https://www.youtube.com/watch?v=h24_zoqu4_Q), a dance craze from the mid 2000s that swept weddings, bars, and even middle school dances. From there I looked up a picture of wings to be in the header (I found those on [pngtree.com](https://pngtree.com/)). Next I designed a color palette from [colors.co](https://coolors.co/palettes/trending/gold). Finally I was ready to start!
 My initial idea was to make several different ways to shuffle a deck (but due to time constraints I thought it more important to meet the mvp). 
 I also wanted to make all of the functions scalable. Instead of randomizing 52 cards, they work with a variable (card) and it's length. An initial thought of mine was to make several decks, possibly one with jokers, or Go Fish.
-It should be noted that the test for the shuffle function has a 1 in 52 chance of failure, due to the nature of randomness.
+It should be noted that the test for the shuffle function has a 1 in 52! chance of failure, due to the nature of randomness. (If this test fails, go buy a lottery ticket, and run it again).
 
 ### What's next?
 
